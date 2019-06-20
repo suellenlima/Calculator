@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#Author: Suellen Lima (@suejaspe) (@suellenlime)
 
 print("------------- CALCULATOR ----------------")
 
@@ -6,41 +7,41 @@ exit = False
 
 while exit == False:
 
-	num1 = input("Digite o primeiro número: ")
+	num1 = input("Enter the first number: ")
 	num1 = int(num1)
-	oper = input("Digite o operador: (+ - / * ** %): ")
-	num2 = input("Digite o segundo número: ")
+	oper = input("Enter the operator: (+ - / * ** %): ")
+	num2 = input("Enter the second number: ")
 	num2 = int(num2)
 
-	#soma
+	#sum
 	if oper == "+":
-		operacao = num1 + num2
+		operation = num1 + num2
 
-	#subtração
+	#subtraction
 	if oper == "-":
-		operacao = num1 - num2
+		operation = num1 - num2
 
-	#divisão
+	#division
 	if oper == "/":
-		operacao = num1 / num2
+		operation = num1 / num2
 
-	#multiplicação
+	#multiplication
 	if oper == "*":
-		operacao = num1 * num2
+		operation = num1 * num2
 
-	#exponenciação
+	#exponentiation
 	if oper == "**":
-		operacao = num1 ** num2
+		operation = num1 ** num2
 
-	#resto
+	#rest
 	if oper == "%":
-		operacao = num1 % num2
+		operation = num1 % num2
 
-	print("Resultado: ")
-	print(operacao)
+	print("Result: ")
+	print(operation)
 
-	teste = input("Deseja sair? (s/n) ")
-	if teste == "s":
+	test = input("Exit? (y/n) ")
+	if test == "y":
 		exit = True
-	if teste == "n":
+	if test == "n":
 		exite = False
