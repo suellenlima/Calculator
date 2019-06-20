@@ -1,6 +1,25 @@
 # -*- coding: utf-8 -*-
 #Author: Suellen Lima (@suejaspe) (@suellenlime)
 
+def sum(x,y):
+	return x + y
+
+def subtraction(x,y):
+	return x - y
+
+def division(x,y):
+	return x / y
+
+def multiplication(x,y):
+	return x * y
+
+def exponentiation(x,y):
+	return x ** y
+
+def rest(x,y):
+	return x % y
+
+
 print("------------- CALCULATOR ----------------")
 
 exit = False
@@ -15,27 +34,27 @@ while exit == False:
 
 	#sum
 	if oper == "+":
-		operation = num1 + num2
+		operation = sum(num1,num2)
 
 	#subtraction
 	if oper == "-":
-		operation = num1 - num2
+		operation = subtraction(num1,num2)
 
 	#division
 	if oper == "/":
-		operation = num1 / num2
+		operation = division(num1,num2)
 
 	#multiplication
 	if oper == "*":
-		operation = num1 * num2
+		operation = multiplication(num1,num2)
 
 	#exponentiation
 	if oper == "**":
-		operation = num1 ** num2
+		operation = exponentiation(num1,num2)
 
 	#rest
 	if oper == "%":
-		operation = num1 % num2
+		operation = rest(num1,num2)
 
 	print("Result: ")
 	print(operation)
